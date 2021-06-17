@@ -1,0 +1,329 @@
+@charset "utf-8";
+@import url('reset.css');
+:root{
+    --f0: 14px;
+    --f1: 18px;
+    --f2: 22px;
+    --f3: 24px;
+    --f4: 36px;  
+}
+
+body{
+    background: rgba(241, 241, 241, 0.5);
+    color: #222;
+}
+h2{
+    font-size: var(--f4);
+    font-weight: bold;
+}
+#course h2, #teachers h2, #contact h2{
+    border-left: 10px solid #333;
+    padding-left: 12px;
+}
+h3{
+    font-size: var(--f2);
+}
+p{
+    font-size: var(--f3);
+    line-height: 1.5;
+}
+
+header section h1{
+    font-size: 56px;
+    padding: 30px 50px;
+}
+#mainvisual h1{
+    font-size: 56px;
+    text-indent: 20px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+#mainvisual{
+    height: 100vh;
+    position: relative;
+}
+#mainvisual .container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.fluid{
+    margin-left: 100px;
+}
+
+
+/* meについて */
+#about{
+    height: 100vh;
+}
+#about h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+#about .container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about .container section{
+    width: 45%;
+}
+
+#about .container section p{
+    font-size: var(--f1);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+
+/* コース紹介 */
+#course .container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    margin-bottom: 200px;
+}
+#course .container h2{
+    margin-bottom: 50px;
+}
+#course .container>section{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#course .container p{
+    font-size: var(--f1);
+    margin-bottom: 20px;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+#course .container .f0{
+    font-size: var(--f0);
+}
+#course .container .wrapper .area .f0{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+#course .container .wrapper .area .f0 section:first-child{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid;
+    line-height: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#course .container .wrapper .area{
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, .1));
+}
+#course .container .wrapper .area h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 講師紹介 */
+#teachers .container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3000px;
+}
+#teachers .container figure img{
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+}
+#teachers .container h2{
+    margin-bottom: 30px;
+}
+#teachers .container p{
+    font-size: var(--f1);
+}
+#teachers .area1 .box p{
+    font-size: 16px;
+}
+#teachers .area1 .box h2{
+    font-size: var(--f2);
+}
+.area1{
+  position:relative;
+  margin:0 auto 20% auto;
+  padding: 0 30px 0;
+  max-width:1000px;
+  width:100%;
+}
+.area1 figure{
+  position:absolute;
+  left:-150px;
+  top: -350px;
+  width:40%;
+  line-height: 0;
+}
+.area1:nth-child(2n) figure{
+    right: 40%;
+    left: 70%;
+    top: 750px;
+}
+.area1:nth-child(3n) figure{
+    right: 40%;
+    left: -70%;
+    top: 1200px;
+}
+
+.area1 .box{
+  position:absolute;
+  top: 0;
+  left: 25%;
+  right: 10%;
+  background:#fff;
+  padding:50px;
+  margin-right: 80px;
+  margin-top: 300px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+}
+
+.area1:nth-child(2n) .box{
+  left:inherit;
+  right:40%;
+  left: -10%;
+  top: 1300px;
+}
+.area1:nth-child(3n) .box{
+  left:inherit;
+  right: -10%;
+  left: 35%;
+  top: 2150px;
+}
+
+/* 申し込み */
+#contact .container{
+    width: 70%;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid;
+}
+#contact .container h2{
+    margin-bottom: 80px;
+}
+#contact form{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact form p{
+    font-size: var(--f0);
+    margin-bottom: 20px;
+}
+#contact form input[type="text"],
+#contact form input[type="file"],
+#contact form input[type="email"],
+#contact form input[type="submit"]{
+    width: 100%;
+    margin-top: 6px;
+    height: 30px;
+}
+#contact form .radio{
+    display: flex;
+    justify-content: space-between;
+}
+#contact form .radio section{
+    width: 48%;
+    text-align: center;
+}
+#contact form span{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 12px;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 4px;
+    font-size: smaller;
+}
+#contact form input[type="submit"]{
+    height: 40px;
+    background: cornflowerblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/* フッター */
+footer{
+    padding: 40px 0;
+}
+footer div{
+    text-align: center;
+    font-size: var(--f0);
+}
+
+/* ハンバーガーメニュー */
+.menubtn{
+    width: 100%;
+    max-width: 50px;
+    width: 24px;
+    height: 24px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+}
+.w1000{
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+nav{
+    background: rgba(204, 204, 204, 0.8);
+    position: fixed;
+    width: 140px;
+    height: 100%;
+    text-align: center;
+    padding-left: 60px;
+    left: -200px;
+    z-index: 998;
+    transition: 0.3s;
+}
+.navActive{
+    left: 0;
+}
+header .w1000 ul{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    padding-left: 20px;
+    transform: translate(0, -50%);
+}
+nav ul li{
+    font-weight: bold;
+}
+nav ul li a:hover{
+    opacity: 0.6;
+}
+html{
+    scroll-behavior: smooth;
+  }
